@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <title>Mi Curriculum Vitae</title>
+        <meta charset="UTF-8">
+        <!-- Meta viewport es para que se vea bien en dispositivos moviles-->
+        <meta name="viewport" content="width=device-widt, initial-scale=1">
+
+        <!--LLAMAR AL CSS -->
+        <link rel="stylesheet" href="CSS/style.css"/>
+    </head>
+
+    <body>
+        <!--Encabezado -->
+        <header>
+            <h1>Juan Pérez</h1>
+            <h2>Estudiante de desarrollo web</h2>
+            <img src="https://picsum.photos/150" alt="Fotografía de Juan Pérez"/>
+            <p>Correo: juan@email.com</p>
+            <p>Teléfono: 8888-8888</p>
+
+            <div class="botonera">
+                <button type="button" id="btnDatosProyecto"> Ver datos del proyecto</button>
+                <button type="button" id="btnModo">Cambiar a modo oscuro</button>
+            </div>
+
+            <div id="datosProyecto" class="caja-into oculto"></div>
+        </header>
+
+        <!--Perfil -->
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p>Soy estudiante interesado en el desarrollo de páginas web. Me gusta aprender nuevas tecnologías
+                y trabajar en equipo
+            </p>
+
+            <div id="perfilExtra" class="oculto">
+                <p>
+                    Actualmente estoy fortaleciendo mis conocimientos en JavaScript y en aplicaciones web con java.Busco para aplicar
+                    lo aprendido en proyecto reales</p>
+            </div>
+
+            <button type="button" id="btnLeerMas">Leer mas</button>
+
+        </section>
+
+        <!--Educación -->
+        <section>
+            <h2>Educación</h2>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Institución</th>
+                    <th>Estudios</th>
+                </tr>
+
+                <tr>
+                    <td>2026</td>
+                    <td>Universidad Castro Carazo</td>
+                    <td>Lic. Ingeniería en Sistemas</td>
+                </tr>
+
+                <tr>
+                    <td>2022</td>
+                    <td>Universidad Castro Carazo</td>
+                    <td>Bach. Ingeniería en Computación</td>
+                </tr>
+            </table>
+
+            <button type="button" id="btnAniosEstudio">Calcular años de estudio</button>
+            <div id="resultadoAnios" class="caja-info oculto"></div>
+
+        </section>
+
+        <!--Habilidades -->
+        <section>
+            <h2>Habilidades</h2>
+            <ul id="listaHabilidades">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Trabajo en equipo</li>
+                <li>Comunicación</li>
+            </ul>
+
+            <div class="fila">
+                <input type="text" id="nuevaHabilidad" placeholder="Ej: JavaScript">
+                <button type="button" id="btnAgregarHabilidad">Agregar Habilidad</button>
+            </div>
+
+            <p id="contadorHabilidades" class="nota"></p>
+
+        </section>
+
+        <!--Experiencia -->
+        <section>
+            <h2>Experiencia</h2>
+            <h3>Empresa Castro Carazo</h3>
+            <p><strong>Puesto:</strong>Asistente de desarollo</p>
+            <p>Participé en proyecto de desarrollo de páginas web y colaboré con otros miembros del equipo.</p>
+        </section>
+
+        <!--Contacto-->
+        <section>
+            <h2>Contacto</h2>
+            <p>Puedes encontrarme en:
+                <a href="https://www.linkedin.com">LinkedIn</a>
+            </p>
+
+            <p>O enviame un mensaje</p>
+
+            <form id="formContacto" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo">
+                </div>
+
+                <div class="campo">
+                    <label for="motivo">Motivo</label>
+                    <select id="motivo">
+                        <option value="">-- Seleccione --</option>
+                        <option value="Oferta de empleo">Oferta de empleo</option>
+                        <option value="Proyecto">Proyecto</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <!-- Caja donde se muestra el resultado o los errores del formulario -->
+            <div id="resultadoFormulario" class="caja-info oculto"></div>
+
+        </section>
+
+        <!--Pie de página -->
+        <footer>
+            <p>Elaborado por Juan Pérez 2026 <span id="anioActual">2026</p>
+        </footer>
+        
+        <!-- LLAMAR AL ARCHIVO JAVASCRIPT-->
+        <script src="JS/script.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,206 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 sept 2026, 11:54:03 a. m.
+    Author     : User
+*/
+/* ===== Estilos originales ===== */
+h1 {
+    color: darkblue;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 0;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    background-color: #3d4246;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* ===== Tabla (reemplaza border="1") ===== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+/* ===== Botones ===== */
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #1a1aa8;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 2px;
+}
+
+button.secundario {
+    background-color: #777777;
+}
+
+.botonera {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+section .botonera {
+    justify-content: flex-start;
+}
+
+/* ===== Cajas de resultado (divs) ===== */
+.caja-info {
+    background-color: #e8ecff;
+    border-left: 5px solid darkblue;
+    padding: 12px 15px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.caja-info.exito {
+    background-color: #e3f6e5;
+    border-left-color: green;
+}
+
+.caja-info.error {
+    background-color: #fde8e8;
+    border-left-color: #c0392b;
+}
+
+/* Clase para esconder elementos */
+.oculto {
+    display: none;
+}
+
+/* ===== Formularios y campos ===== */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.grupo-notas {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.grupo-notas .campo {
+    flex: 1;
+    min-width: 100px;
+}
+
+.fila {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.fila input {
+    flex: 1;
+    min-width: 150px;
+}
+
+.nota {
+    color: #666666;
+    font-size: 13px;
+}
+
+/* ===== Modo oscuro (se activa con JavaScript) ===== */
+body.oscuro {
+    background-color: #1e1e1e;
+    color: #eeeeee;
+}
+
+body.oscuro header,
+body.oscuro section {
+    background-color: #2c2c2c;
+}
+
+body.oscuro h1 {
+    color: #8fa8ff;
+}
+
+body.oscuro a {
+    color: #8fa8ff;
+}
+
+body.oscuro .caja-info {
+    background-color: #33384d;
+}
+
+body.oscuro .caja-info.exito {
+    background-color: #2d4431;
+}
+
+body.oscuro .caja-info.error {
+    background-color: #4d2d2d;
+}
+
+body.oscuro input,
+body.oscuro select,
+body.oscuro textarea {
+    background-color: #3a3a3a;
+    color: #eeeeee;
+    border-color: #666666;
+}
